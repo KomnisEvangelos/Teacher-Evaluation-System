@@ -5,5 +5,5 @@ return [
     'port' => 3306,
     'dbname' => 'university',
     'username' => 'root',
-    'password' => ''
+    'password' => 'jNtX8x8TQFbSp7G'
 ];

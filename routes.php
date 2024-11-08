@@ -10,8 +10,10 @@ $router->post('/listings', 'ListingController@store', ['auth']);
 $router->put('/listings/{id}', 'ListingController@update', ['auth']);
 $router->delete('/listings/{id}', 'ListingController@destroy', ['auth']);
 
-$router->get('/auth/register', 'UserController@create', ['guest']);
 $router->get('/auth/login', 'UserController@login', ['guest']);
+$router->get('/auth/admin-panel/login', 'AdminController@login', ['guest']);
+
+
 
 $router->post('/auth/register', 'UserController@store', ['guest']);
 $router->post('/auth/logout', 'UserController@logout', ['auth']);
